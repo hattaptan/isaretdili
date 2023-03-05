@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iDiL</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/API.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+            overflow: hidden;
+        }
+        
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        
+        .jumbotron {
+            text-align: center;
+            background-color: #f4511e;
+            color: #fff;
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+        
+        .logo-small {
+            color: #ffffff;
+            font-size: 50px;
+        }
+        
+        .logo {
+            color: #ffffff;
+            font-size: 200px;
+        }
+        
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #formGr {
+            text-align: center;
+        }
+        
+        #formGr {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+        }
+        
+        .input-group {
+            width: 50%;
+        }
+        
+        #wordInput {
+            border-radius: 5px 0px 0px 5px;
+            border-right: none;
+        }
+        
+        #btnConvert {
+            border-radius: 0px 5px 5px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div>
+            <header>
+                <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dar border-bottom box-shadow mb-1" style="background-color:#6f42c1;"></nav>
+            </header>
+
+            <div class="jumbotron text-center">
+                <h1>İŞARET DİLİ </h1>
+                <p>Kelime kelime işaret dili öğren...</p>
+
+                <form id="formGr">
+                    <div class="input-group">
+
+                        <input type="text" class="form-control col-md-6" id="wordInput" size="25" placeholder="Bir kelime yazın" required>
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" id="btnConvert" style="background-color:#6f42c1;">Çevir</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="image-gallery d-flex justify-content-center align-items-center" id="gifArea" style="background-color: #ffffff;">
+
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
